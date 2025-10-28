@@ -21,7 +21,9 @@ public class LoginPage extends BasePage{
         return new ProductPage();
     }
     public String getErrorMsg(){
+
         return find(errorMessage).getText();
+
     }
 
     public ProductPage logInApplication(String username , String password){
